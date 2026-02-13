@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Sahu | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ===== GLOBAL ===== */
+:root{
+  --bg:#0b0f19;
+  --card:#141a26;
+  --accent:#00e6a8;
+  --text:#e5e7eb;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:linear-gradient(135deg,#0b0f19,#101827);
+  color:var(--text);
+}
+
+section{
+  padding: 80px; 8%;
+}
+
+h2{
+  color:var(--accent);
+  margin-bottom:35px;
+  font-size:32px;
+  text-align:center;
+}
+
+/* ===== NAV ===== */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:18px 8%;
+  position:sticky;
+  top:0;
+  backdrop-filter:blur(12px);
+  background:rgba(0,0,0,.4);
+}
+
+nav a{
+  margin-left:20px;
+  color:white;
+  text-decoration:none;
+}
+
+nav a:hover{color:var(--accent);}
+
+.resume{
+  background:var(--accent);
+  color:black;
+  padding:6px 14px;
+  border-radius:8px;
+}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:95vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:0 8%;
+}
+
+.hero h1{
+  font-size:65px;
+  font-weight:800;
+  background:linear-gradient(90deg,#00e6a8,#4facfe);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero p{
+  margin-top:12px;
+  max-width:600px;
+  color:#94a3b8;
+}
+
+.tag{
+  display:inline-block;
+  margin:10px 8px 0 0;
+  background:#1f2937;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:13px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.primary{background:var(--accent);color:black;}
+.secondary{border:1px solid #333;}
+
+/* ===== CARDS ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:var(--card);
+  padding:25px;
+  border-radius:14px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20px rgba(0,230,168,.3);
+}
+
+/* ===== SKILLS ===== */
+.skill{
+  text-align:center;
+  font-weight:600;
+}
+.skill:hover{
+  background:var(--accent);
+  color:black;
+}
+
+/* ===== PROJECT ===== */
+.project-card{
+  max-width:450px;
+  margin:auto;
+  text-align:center;
+}
+
+.tech{
+  margin-top:12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  justify-content:center;
+}
+
+.tech span{
+  background:#1f2937;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+.github-btn{
+  margin-top:14px;
+  display:inline-block;
+  background:#4facfe;
+  padding:8px 16px;
+  border-radius:8px;
+  color:black;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* ===== EDUCATION ===== */
+.edu-card{
+  max-width:500px;
+  margin:auto;
+  text-align:center;
+}
+
+.badge{
+  background:#16a34a;
+  padding:4px 10px;
+  border-radius:8px;
+  font-size:12px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#94a3b8;
+}
+/* ===== Tech Stack Boxes ===== */
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.tech-stack span {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tech-stack span:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}/* center name + tagline */
+
+.name {
+  text-align: center;
+  font-size: 42px;
+}
+.tagline {
+    text-align: center;
+    
+}.view-btn {
+  display: block;
+  margin: 10px auto;
+}/* ===== Contact Section ===== */
+
+#contact {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-text {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-box a {
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 230px;
+  transition: 0.3s;
+}
+
+.contact-box a:hover {
+  background: black;
+  transform: scale(1.05);
+}
+
+.btn.primary {
+  display: block;
+  width: fit-content;
+  margin: 25px auto;
+  text-align: center;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h3 style="color:var(--accent)">H.S</h3>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="HarshSahu_Resume.pdf" download class="resume">Resume</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1 class = "name">Harsh Sahu</h1>
+  <h3 class  = "tagline">Web Developer • AI Enthusiast • Problem Solver</h3>
+
+ <div class="tech-stack">
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>Java</span>
+  <span>JavaScript</span>
+  <span>Python</span>
+  <span>MySQL</span>
+</div>
+
+
+  <a href="#projects" class="btn primary">View Projects</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>🎓 B.Tech CSE Student</h3>
+      <p>Currently pursuing Computer Science Engineering with strong interest in development and problem solving.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤖 AI/ML Enthusiast</h3>
+      <p>Love working on intelligent systems and real-world AI based projects like Agriculture Doctor.</p>
+    </div>
+
+    <div class="card">
+      <h3>💡 Problem Solver</h3>
+      <p>Enjoy solving DSA problems and building optimized solutions for practical challenges.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤝 Team Player</h3>
+      <p>Experienced in team collaboration, project development and communication.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card skill">HTML</div>
+    <div class="card skill">CSS</div>
+    <div class="card skill">JavaScript</div>
+    <div class="card skill">Python</div>
+    <div class="card skill">Java</div>
+    <div class="card skill">MySQL</div>
+    <div class="card skill">Git&GitHub</div>
+    <div class="card skill">AI&ML</div>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="projects">
+  <h2>Project</h2>
+
+  <div class="card project-card">
+    <h3>Agriculture Doctor 🌱</h3>
+
+    <p>
+      Helps farmers detect crop diseases and provides AI-based solutions 
+      for better productivity.
+    </p>
+
+    <div class="tech">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>AI</span>
+    </div>
+
+    <a href="https://github.com/Harsh43054" target="_blank" class="github-btn">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card edu-card">
+    <h3>B.Tech (Bachelor of Technology)</h3>
+    <p>Ambalika Institute of Management & Technology</p>
+    <p>📍 Lucknow, India</p>
+    <span class="badge">Currently Pursuing • 2nd Year</span>
+  </div>
+
+  <br>
+
+  <div class="card edu-card">
+    <h3>Modern Public School, Jhansi</h3>
+    <p>CBSE Board • PCM • Class 12th</p>
+  </div>
+</section>
+
+
+</body>
+</html>
+<!-- Contact Section -->
+
+<section id="contact">
+
+  <h2 class="section-title">Contact Me</h2>
+
+  <p class="contact-text">
+    Feel free to reach out for projects, collaboration or any tech discussion 🚀
+  </p>
+
+  <div class="contact-box">
+
+    <a href="https://www.linkedin.com/in/harsh-sahu-157698321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a>
+
+    <a href="https://github.com/Harsh43054" target="_blank">GitHub Profile</a>
+
+    <a href="mailto:harshcse430@gmail.com">G-mail</a>
+
+    <a href="tel:+919335169651">Phone </a>
+
+  </div>
+
+</section>
