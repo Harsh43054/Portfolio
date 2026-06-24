@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Metadata -->
+  <title>Harsh Sahu | B.Tech CSE Student & Software Developer Portfolio</title>
+  <meta name="description" content="Personal developer portfolio of Harsh Sahu, B.Tech Computer Science & Engineering student, software developer, and community manager. Check out my skills, projects, achievements, and experience.">
+  <meta name="keywords" content="Harsh Sahu, Harsh Sahu Ambalika, Harsh Sahu Portfolio, Software Developer, B.Tech CSE student, Ambalika Institute of Management and Technology Lucknow, APYX Community, We4X Community, Virtual Labs IIT Kanpur, Web Developer Lucknow">
+  <meta name="author" content="Harsh Sahu">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harsh Sahu | B.Tech CSE Student & Software Developer Portfolio">
+  <meta property="og:description" content="Personal developer portfolio of Harsh Sahu. Highlighting skills, virtual lab contributions, community roles, and web applications.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Harsh43054/portfolio-assets/main/preview.png">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Harsh Sahu | B.Tech CSE Student & Software Developer Portfolio">
+  <meta name="twitter:description" content="Personal developer portfolio of Harsh Sahu. Highlighting skills, virtual lab contributions, community roles, and web applications.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Particle Network -->
+  <canvas id="particle-canvas"></canvas>
+
+  <div class="floating-socials">
+  <a href="https://github.com/Harsh43054" target="_blank" rel="noopener noreferrer" class="social-icon-btn">
+    <i data-lucide="code-2"></i>
+  </a>
+
+  <a href="https://linkedin.com/in/harsh-sahu-157698321" target="_blank" rel="noopener noreferrer" class="social-icon-btn">
+    <i data-lucide="link"></i>
+  </a>
+
+  <a href="mailto:harshcse430@gmail.com" class="social-icon-btn">
+    <i data-lucide="mail"></i>
+  </a>
+
+  <a href="tel:+919335169651" class="social-icon-btn">
+    <i data-lucide="phone"></i>
+  </a>
+</div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="nav-logo" aria-label="Harsh Sahu Home">
+        <div class="logo-icon">HS</div>
+       
+      </a>
+
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="active-link" id="nav-link-home">Home</a></li>
+          <li><a href="#about" id="nav-link-about">About</a></li>
+          <li><a href="#skills" id="nav-link-skills">Skills</a></li>
+          <li><a href="#projects" id="nav-link-projects">Projects</a></li>
+          <li><a href="#timeline" id="nav-link-timeline">Journey</a></li>
+          <li><a href="#contact" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu Mobile Toggle -->
+      <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-welcome">Welcome to my space</span>
+          <h1 class="hero-name">Harsh <span class="grad-text">Sahu</span></h1>
+          <div class="hero-typing-container">
+            I am a <span id="typing-text" class="grad-text"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc">
+            Aspiring Software Developer passionate about building practical digital solutions, web applications, and educational technology projects. Strong interest in software development, problem-solving, community building, and emerging technologies.
+          </p>
+          <div class="hero-actions">
+           <a href="RESUME-1.pdf" class="btn btn-primary" download>
+    <i data-lucide="download"></i> Download Resume
+</a>
+            <a href="#projects" class="btn btn-secondary" id="hero-view-projects">
+              <i data-lucide="external-link"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-contact-me">
+              <i data-lucide="message-square"></i> Contact Me
+            </a>
+          </div>
+        </div>
+
+       <div class="hero-visual">
+
+  <div class="orbit orbit-1"></div>
+  <div class="orbit orbit-2"></div>
+
+  <div class="profile-card-3d">
+      <div class="profile-image">
+          <img src="Pic.jpeg" alt="Harsh Sahu">
+      </div>
+
+      <div class="profile-content">
+          <span class="badge">BTech CSE </span>
+          <h2>Harsh Sahu</h2>
+        
+          <p>AIMT, Lucknow</p>
+      </div>
+
+      
+
+</div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding container reveal">
+      <div class="section-header">
+        <h2>About <span class="grad-text">Me</span></h2>
+        <p>A glimpse into who I am and my engineering background</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a <strong>Bachelor of Technology (Computer Science & Engineering)</strong> student at <strong>Ambalika Institute of Management and Technology, Lucknow</strong>. My engineering journey is driven by a deep fascination with software development, modern web technologies, AI tools, and constructing digital solutions that have a real-world impact.
+          </p>
+          <p>
+I enjoy solving real-world problems through code and actively contribute to communities, hackathons, event management, and virtual lab development.
+          </p>
+          <p>
+            As a 3rd-year student, I am focused on strengthening my core computer science fundamentals—data structures, algorithms, and system design—while staying hands-on with front-end frameworks and deployment pipelines.
+          </p>
+        </div>
+
+        <div class="about-cards-grid">
+          <div class="glass-card about-card">
+            <div class="about-card-icon"><i data-lucide="code-2"></i></div>
+            <h3>Developer</h3>
+            <p>Crafting responsive applications, simulation programs, and interactive tools.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="about-card-icon"><i data-lucide="users"></i></div>
+            <h3>Community</h3>
+            <p>Leading events, managing developer networks, and coordinating tech assemblies.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="about-card-icon"><i data-lucide="lightbulb"></i></div>
+            <h3>Innovator</h3>
+            <p>Experimenting with virtual education modules and exploring emerging AI resources.</p>
+          </div>
+          <div class="glass-card about-card">
+            <div class="about-card-icon"><i data-lucide="award"></i></div>
+            <h3>Learner</h3>
+            <p>Constantly upgrading skills through challenges, coding practice, and peer collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-padding container reveal">
+      <div class="section-header">
+        <h2>My <span class="grad-text">Skills</span></h2>
+        <p>My toolbelt of technical proficiencies and leadership capabilities</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Technical Competencies -->
+        <div class="skills-column">
+          <h3><i data-lucide="terminal"></i> Technical Competencies</h3>
+          
+          <div class="skills-wrapper">
+            <!-- Programming Languages -->
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>C / C++ (Data Structures)</span>
+                
+                <span>85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-target="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Java Programming</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-target="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Python Programming</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-target="75"></div>
+              </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>HTML5 / CSS3 / JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-target="90"></div>
+              </div>
+            </div>
+
+            <!-- Tools & VCS -->
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Git & GitHub (Version Control)</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-target="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>VS Code & Development Environments</span>
+
+                <span>85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-target="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core & Interpersonal Skills -->
+        <div class="skills-column">
+          <h3><i data-lucide="sparkles"></i> Professional Strengths</h3>
+          <div class="core-skills-grid">
+            <div class="glass-card core-skill-card">
+              <i data-lucide="brain" class="core-skill-icon"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="glass-card core-skill-card">
+              <i data-lucide="message-square" class="core-skill-icon"></i>
+              <span>Communication</span>
+            </div>
+            <div class="glass-card core-skill-card">
+              <i data-lucide="heart" class="core-skill-icon"></i>
+              <span>Team Leadership</span>
+            </div>
+            <div class="glass-card core-skill-card">
+              <i data-lucide="users-2" class="core-skill-icon"></i>
+              <span>Community Mgmt</span>
+            </div>
+            <div class="glass-card core-skill-card">
+              <i data-lucide="calendar" class="core-skill-icon"></i>
+              <span>Event Management</span>
+            </div>
+            <div class="glass-card core-skill-card">
+              <i data-lucide="blocks" class="core-skill-icon"></i>
+              <span>Collaborative Dev</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-padding container reveal">
+      <div class="section-header">
+        <h2>Featured <span class="grad-text">Projects</span></h2>
+        <p>A compilation of applications and software systems I have engineered</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="glass-card project-card">
+          <div class="project-icon">
+            <i data-lucide="sprout"></i>
+          </div>
+          <h3>Agriculture Doctor</h3>
+          <p class="project-desc">
+            A web-based platform designed to provide agriculture-related guidance through an intuitive and user-friendly interface. It features crop management guides, disease diagnostic hints, and resource navigation tools.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">UX Design</span>
+            <span class="project-tag">Basic ML</span>
+          </div>
+          <div class="project-links">
+           <a href="https://github.com/Harsh43054" target="_blank" rel="noopener noreferrer" class="project-link">
+    View Code
+</a>
+            
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="glass-card project-card">
+          <div class="project-icon">
+            <i data-lucide="flask-conical"></i>
+          </div>
+          <h3>Virtual C++ Programming & Compiler Design Labs</h3>
+
+<p class="project-desc">
+  Developed interactive <strong>Virtual C++ Programming and Compiler Design Laboratory</strong> modules featuring simulations, experiment workflows, code visualization, and user-friendly interfaces. Built using HTML, CSS, and JavaScript to enhance practical learning and student engagement.
+</p>
+
+<div class="project-tags">
+  <span class="project-tag">HTML5</span>
+  <span class="project-tag">CSS3</span>
+  <span class="project-tag">JavaScript</span>
+ 
+  
+  
+</div>
+          <div class="project-links">
+            <a href="https://github.com/Harsh43054" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repo for Virtual Lab">
+              <i data-lucide="github"></i> Code
+            </a>
+            
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="glass-card project-card">
+          <div class="project-icon">
+            <i data-lucide="layout"></i>
+          </div>
+          <h3>Personal Portfolio</h3>
+          <p class="project-desc">
+            A premium, dark futuristic developer portfolio showcasing my achievements, career milestones, educational history, technical competencies, and contact information. Built with optimized performance in mind.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">Vanilla CSS3</span>
+            <span class="project-tag">ES6 JavaScript</span>
+            <span class="project-tag">Canvas Particles</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Harsh43054" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Repo for Portfolio">
+              <i data-lucide="github"></i> Code
+            </a>
+            <a href="#home" class="project-link" aria-label="Scroll to top of Portfolio">
+              <i data-lucide="rotate-ccw"></i> Back to Top
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TIMELINE SECTION (EDUCATION & EXPERIENCE) -->
+    <section id="timeline" class="section-padding container reveal">
+      <div class="section-header">
+        <h2>Professional <span class="grad-text">Journey</span></h2>
+        <p>Chronological summary of my academic path and active community contributions</p>
+      </div>
+
+      <div class="timeline-section-grid">
+        <!-- Experience Column -->
+        <div class="timeline-column">
+          <h3><i data-lucide="briefcase"></i> Experience</h3>
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">Active Period</span>
+                <h4>Community Manager</h4>
+                <div class="timeline-subtitle">APYX Community</div>
+                <ul class="timeline-responsibilities">
+                  <li>Spearheaded community member growth through targeted digital campaigns and tech talks.</li>
+                  <li>Coordinated technical events, hackathons, and interactive guest lectures.</li>
+                  <li>Maintained student engagement, resolving coding queries and facilitating group collaborations.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">Active Period</span>
+                <h4>CHRO</h4>
+<div class="timeline-subtitle">We4X Community</div>
+
+<ul class="timeline-responsibilities">
+  <li>Led community growth and engagement initiatives.</li>
+  <li>Organized technical events, webinars, and workshops.</li>
+  <li>Managed team coordination and cross-community collaborations.</li>
+</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="timeline-column">
+          <h3><i data-lucide="graduation-cap"></i> Education</h3>
+          <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">2024 - Present</span>
+                <h4>Bachelor of Technology (B.Tech)</h4>
+                <div class="timeline-subtitle">Computer Science & Engineering</div>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                  Ambalika Institute of Management and Technology, Lucknow<br>
+                  Affiliated with APJ Abdul Kalam Technical University (AKTU)
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+                  Currently in 3rd Year. Focusing on Data Structures, Algorithms, Web Engineering, and Artificial Intelligence tools.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="glass-card timeline-card">
+                <span class="timeline-date">Completed 2022</span>
+                <h4>Class 12 (High School)</h4>
+                <div class="timeline-subtitle">Science Stream (PCM)</div>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                  Modern Public School, Jhansi<br>
+                  Central Board of Secondary Education (CBSE)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & COUNTERS -->
+    <section id="achievements" class="stats-section container reveal">
+      <div class="section-header">
+        <h2>Key <span class="grad-text">Highlights</span></h2>
+        <p>Quantifiable statistics showing my technical outreach and milestones</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i data-lucide="terminal" size="32"></i></div>
+          <div class="stat-number" data-target="10" data-suffix="+">0</div>
+          <div class="stat-label">Hackathons & Events</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i data-lucide="users" size="32"></i></div>
+          <div class="stat-number" data-target="600" data-suffix="+">0</div>
+          <div class="stat-label">Community Members Managed</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i data-lucide="microscope" size="32"></i></div>
+          <div class="stat-number" data-target="5" data-suffix="+">0</div>
+          <div class="stat-label">Virtual Lab Modules Built</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-icon"><i data-lucide="clock" size="32"></i></div>
+          <div class="stat-number" data-target="100" data-suffix="+">0</div>
+          <div class="stat-label">Hours of Coding & Learning</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding container reveal">
+      <div class="section-header">
+        <h2>Get In <span class="grad-text">Touch</span></h2>
+        <p>Have an event, a job role, or a project in mind? Reach out to me directly!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <!-- Card 1 -->
+          <div class="glass-card contact-info-card">
+            <div class="contact-info-icon"><i data-lucide="mail"></i></div>
+            <div class="contact-info-details">
+              <h4>Email</h4>
+              <a href="mailto:harshcse430@gmail.com" id="contact-email-link">harshcse430@gmail.com</a>
+              
+            </div>
+          </div>
+         <!-- Card 2 -->
+<div class="glass-card contact-info-card">
+  <div class="contact-info-icon">
+    <i data-lucide="link"></i>
+  </div>
+  <div class="contact-info-details">
+    <h4>LinkedIn</h4>
+    <a href="https://linkedin.com/in/harsh-sahu-157698321" target="_blank" rel="noopener noreferrer">
+      linkedin.com/in/harsh-sahu-157698321
+    </a>
+  </div>
+</div>
+
+<!-- Card 3 -->
+<div class="glass-card contact-info-card">
+  <div class="contact-info-icon">
+    <i data-lucide="code-2"></i>
+  </div>
+  <div class="contact-info-details">
+    <h4>GitHub</h4>
+    <a href="https://github.com/Harsh43054" target="_blank" rel="noopener noreferrer">
+      github.com/Harsh43054
+    </a>
+  </div>
+</div>
+
+<!-- Card 4 -->
+<div class="glass-card contact-info-card">
+  <div class="contact-info-icon">
+    <i data-lucide="phone"></i>
+  </div>
+  <div class="contact-info-details">
+    <h4>Phone</h4>
+    <a href="tel:+919335169651">
+      +91 93351 69651
+    </a>
+  </div>
+</div>
+
+ 
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#home" class="footer-logo">Harsh<span class="grad-text">Sahu</span></a>
+      <p class="footer-copy">&copy; <span id="current-year">2026</span> HS Built with passion &amp; precision.</p>
+    </div>
+  </footer>
+
+  <!-- Lucide Icon Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+  document.getElementById('current-year').textContent =
+    new Date().getFullYear();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
