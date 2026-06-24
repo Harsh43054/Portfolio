@@ -433,7 +433,7 @@ header.scrolled {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   padding-top: 100px;
@@ -1479,5 +1479,23 @@ footer {
 
   .hero-visual {
     margin-top: 20px;
+  }
+}@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .hero-typing-container {
+    font-size: 1.5rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
   }
 }
