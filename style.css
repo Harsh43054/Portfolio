@@ -1423,3 +1423,45 @@ footer {
 
     gap: 25px;
 }
+@media (max-width: 768px) {
+
+  .hero-content,
+  .about-content,
+  .contact-grid,
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    flex-direction: column;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero-visual {
+    margin-top: 30px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr !important;
+  }
+
+  .floating-socials {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+.project-link{
+    display:inline-block;
+    padding:12px 24px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+    letter-spacing:1px;
+    border:1px solid #00f2fe;
+    box-shadow:0 0 15px rgba(0,242,254,0.3);
+}
