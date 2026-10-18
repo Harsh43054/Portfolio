@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harsh Sahu | Frontend &amp; Software Development Intern</title>
+<title>Harsh Sahu | Full-Stack &amp; Frontend Developer</title>
 <meta name="description" content="Harsh Sahu is a B.Tech CSE student building responsive web apps and AI projects. Seeking on-site software development or frontend internships across India.">
 <meta name="theme-color" content="#0b0d12">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Harsh Sahu | Frontend &amp; Software Development Intern">
 <meta property="og:description" content="I turn ideas into shipped products. Portfolio of Harsh Sahu.">
-<meta property="og:image" content="profile.jpg">
+<meta property="og:image" content="https://portfolio-harshcse43.vercel.app/profile.jpg">
+<link rel="canonical" href="https://portfolio-harshcse43.vercel.app/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -20,10 +21,10 @@
 <div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav">
-  <a href="#top" class="logo" aria-label="Harsh Sahu, home">HS</a>
+  <a href="#top" class="logo" aria-label="Harsh Sahu, home">harsh<span>.</span></a>
   <nav aria-label="Primary">
     <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-  </nav>
+  </nav><button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme">◐ <span>Theme</span></button>
 </header>
 
 <main id="main">
@@ -31,9 +32,9 @@
   <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <p class="hi h1a">Hi, I'm Harsh Sahu</p>
-      <h1 class="h1b">I turn ideas into shipped products</h1>
-      <p class="sub h1c">Computer Science student with hands-on experience in frontend development, AI/ML and community leadership. Looking for on-site internships across India in Software Development or Frontend Engineering.</p>
+      <p class="availability"><span></span> Open to internship opportunities</p><p class="hi h1a">Hi, I’m Harsh Sahu — developer &amp; builder.</p>
+      <h1 class="h1b">Thoughtful interfaces.<br>Working products.</h1>
+      <p class="sub h1c">I’m a Computer Science student building responsive interfaces, full-stack applications, and practical AI experiences. Open to software development and frontend internships across India.</p>
       <div class="cta h1d">
         <a class="btn primary" href="#projects">View work</a>
         <a class="btn" href="resume.pdf" download>Download resume</a>
@@ -53,12 +54,12 @@
 <section class="sec" id="about">
   <div class="wrap">
     <h2 data-reveal>About</h2>
-    <p class="lead" data-reveal>I'm a final-year B.Tech CSE student who likes building things people can use right away. I've shipped interactive virtual labs, an AI waste-segregation prototype and a plant disease detector. I also lead student communities, so I'm as comfortable organising a hackathon as debugging a layout.</p>
+    <p class="lead" data-reveal>I'm a final-year B.Tech CSE student who likes building things people can use right away. I've built interactive virtual labs, an AI waste-segregation prototype, and Agriculture Doctor: a full-stack farming workspace with authenticated accounts, private storage, and external APIs. I also lead student communities, so I'm as comfortable organising a hackathon as debugging a layout.</p>
     <ul class="stats">
-      <li data-reveal><b data-count="7.5" data-dec="1">0</b><span>CGPA out of 10</span></li>
-      <li data-reveal><b data-count="4" data-suffix="+">0</b><span>Deployed projects</span></li>
-      <li data-reveal><b data-count="4">0</b><span>Leadership roles</span></li>
-      <li data-reveal><b data-count="96" data-suffix="%">0</b><span>Classification confidence (ResNet-50)</span></li>
+      <li data-reveal><b data-count="7.5" data-dec="1">7.5</b><span>CGPA out of 10</span></li>
+      <li data-reveal><b data-count="4" data-suffix="+">4+</b><span>Deployed projects</span></li>
+      <li data-reveal><b data-count="4">4</b><span>Leadership roles</span></li>
+      <li data-reveal><b>Full stack</b><span>Frontend · APIs · Database</span></li>
     </ul>
   </div>
 </section>
@@ -68,9 +69,9 @@
     <h2 data-reveal>Skills</h2>
     <div class="grid3">
       <article class="card" data-reveal><h3>Languages</h3><ul class="tags"><li>C++</li><li>Python</li><li>Java</li><li>JavaScript</li></ul></article>
-      <article class="card" data-reveal><h3>Frontend</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>React.js (learning)</li></ul></article>
+      <article class="card" data-reveal><h3>Frontend</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>React.js</li><li>Next.js</li><li>TypeScript</li></ul></article>
       <article class="card" data-reveal><h3>AI/ML</h3><ul class="tags"><li>Image Processing</li><li>ChatGPT</li><li>Gemini</li><li>Claude</li><li>GitHub Copilot</li></ul></article>
-      <article class="card" data-reveal><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Vercel</li><li>Firebase</li><li>Figma</li></ul></article>
+      <article class="card" data-reveal><h3>Tools</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Vercel</li><li>Firebase</li><li>Supabase</li><li>PostgreSQL</li><li>REST APIs</li><li>Figma</li></ul></article>
       <article class="card" data-reveal><h3>Core CS</h3><ul class="tags"><li>OOP</li><li>DSA</li><li>DBMS</li><li>Operating Systems</li><li>Computer Organization</li></ul></article>
     </div>
   </div>
@@ -104,27 +105,31 @@
 
 <section class="sec alt" id="projects">
   <div class="wrap">
-    <h2 data-reveal>Projects</h2>
+    <div class="section-top"><div><p class="section-label">SELECTED WORK</p><h2 data-reveal>Built to be used.</h2></div><p>From interactive learning tools<br>to a complete farming workspace.</p></div><div class="project-filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="fullstack" aria-pressed="false">Full stack &amp; AI</button><button type="button" data-filter="frontend" aria-pressed="false">Frontend</button></div><p class="sr-only" id="filter-status" role="status"></p>
     <div class="grid2">
-      <article class="card proj" data-reveal>
+      <article class="card proj featured-project" data-category="fullstack" data-reveal>
+        <div class="featured-copy"><p class="section-label">01 / FEATURED FULL-STACK PROJECT</p><h3>Agriculture Doctor<span class="project-dot">.</span></h3>
+        <p>A farming workspace that brings plant photo assessments, soil records, and local weather together. Built with a real backend, authenticated accounts, and a private database.</p>
+        <ul class="project-highlights"><li>Supabase Auth and user-owned PostgreSQL records</li><li>Private image storage and Gemini image assessments</li><li>Live weather, soil journal, and saved scan history</li></ul>
+        <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Gemini</li><li>Vercel</li></ul>
+        <div class="links"><a class="project-live" href="https://agriculture-doctor-omega.vercel.app" target="_blank" rel="noopener">Explore live app ↗</a><a href="https://github.com/Harsh43054/Agriculture-Doctor" target="_blank" rel="noopener">Source code ↗</a></div>
+        <details class="project-details"><summary>Explore the architecture <span>+</span></summary><p>Next.js API routes run on Vercel. Supabase handles authentication, PostgreSQL, and private photo storage with Row Level Security. Gemini provides photo assessments through Vercel AI Gateway; Open-Meteo supplies weather data. Images are validated and re-encoded, and a database quota limits analysis attempts.</p><p>12 automated tests and production CI passed. Photo assessments communicate uncertainty; they are not confirmed laboratory diagnoses.</p></details></div>
+        <div class="product-preview" aria-label="Agriculture Doctor interface illustration"><div class="preview-toolbar"><i></i><i></i><i></i><span>agriculture-doctor.vercel.app / interface preview</span></div><div class="preview-body"><p>AGRICULTURE DOCTOR</p><h4>A little insight.<br>A healthier field.</h4><div class="preview-leaf" aria-hidden="true">✳</div><div class="preview-cards"><span>Plant doctor<b>Assess a leaf ↗</b></span><span>Soil journal<b>Know your field</b></span></div><div class="preview-bottom"><span>Private records</span><span>Live weather</span><span>AI insights</span></div></div></div>
+      </article>
+      <article class="card proj" data-category="frontend" data-reveal>
         <h3>Virtual C++ Programming Laboratory</h3>
         <p>Interactive lab with theory modules, coding exercises, program demos and quizzes, from fundamentals to OOP, file handling and STL.</p>
         <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
         <div class="links"><a href="https://harsh43054.github.io/Virtual-C-Programming-Laboratory/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/Harsh43054/Virtual-C-Programming-Laboratory" target="_blank" rel="noopener">Code</a></div>
       </article>
-      <article class="card proj" data-reveal>
+      <article class="card proj" data-category="frontend" data-reveal>
         <h3>Compiler Design Virtual Lab</h3>
         <p>Educational platform covering lexical analysis, parsing and code optimization, with simulations and parse-tree visualization.</p>
         <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
         <div class="links"><a href="https://harsh43054.github.io/Compiler-Design-Virtual-Lab/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/Harsh43054/Compiler-Design-Virtual-Lab" target="_blank" rel="noopener">Code</a></div>
       </article>
-      <article class="card proj" data-reveal>
-        <h3>Agriculture Doctor</h3>
-        <p>AI-based plant disease detection that uses image processing and basic machine learning to support agricultural decisions.</p>
-        <ul class="tags"><li>Python</li><li>Machine Learning</li><li>Image Processing</li></ul>
-        <div class="links"><a href="https://harsh43054.github.io/Agriculture-Doctor/" target="_blank" rel="noopener">Live demo</a><a href="https://github.com/Harsh43054/Agriculture-Doctor" target="_blank" rel="noopener">Code</a></div>
-      </article>
-      <article class="card proj" data-reveal>
+
+      <article class="card proj" data-category="frontend" data-reveal>
         <h3>Web-Designing-Aimt</h3>
         <p>A modern, performance-driven marketing agency website with a clean, premium look that showcases services, strategy and results.</p>
         <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
