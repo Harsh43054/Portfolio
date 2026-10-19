@@ -51,3 +51,14 @@
   }));
   if('IntersectionObserver' in window){const nav=[...document.querySelectorAll('.nav nav a')];const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;nav.forEach(a=>{if(a.hash==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});});},{rootMargin:'-15% 0px -60% 0px',threshold:0});document.querySelectorAll('main>section[id]').forEach(section=>observer.observe(section));}
 })();
+
+(function(){
+  const image=document.getElementById('agriculture-screen');
+  const description=document.getElementById('screen-description');
+  const screens={agriculture:['Agriculture Doctor overview dashboard','Overview · Your farming workspace at a glance.'],'plant-doctor':['Agriculture Doctor plant photo assessment interface','Plant doctor · Upload a leaf photo and review an assessment.'],'soil-journal':['Agriculture Doctor soil measurement journal interface','Soil journal · Keep measured readings and field notes together.']};
+  document.querySelectorAll('[data-screen]').forEach(button=>button.addEventListener('click',()=>{
+    const screen=screens[button.dataset.screen];if(!screen)return;
+    document.querySelectorAll('[data-screen]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+    image.src='previews/'+button.dataset.screen+'.jpg';image.alt=screen[0];description.textContent=screen[1];
+  }));
+})();
